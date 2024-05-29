@@ -8,18 +8,27 @@ You will need the following things properly installed on your computer.
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/) (with npm)
 - [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+- [W0rdPress]
 - [Google Chrome](https://google.com/chrome/)
 
 ## Current Versions
 
 - node: 18.x.x
 - yarn: 1.22.x
+- w0rdpress: 6.5.3
 
-## Installation
+## Installation Frontend
 
 - `git clone <repository-url>` this repository
 - `cd nxwp`
 - `yarn install`
+
+## Installation Backend
+
+- `Add New Plugin`
+- `Upload Plugin`
+- Browse... `endro-wp-plugin-api.zip` , `Install Now`
+- `Activate Plugin`
 
 ## Running / Development
 

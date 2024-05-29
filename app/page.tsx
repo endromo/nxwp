@@ -1,7 +1,50 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+'use client';
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import { FormEvent, useState } from "react";
 
 export default function Home() {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const obj_data = {
+      "name": name,
+      "email": email,
+      "msg": message
+    };
+
+    console.log('obj_data:');
+    console.log(obj_data);
+
+    var json_str = JSON.stringify(obj_data);
+
+    var WP_URL: string = (process.env.wordpressAPIUrl) ? process.env.wordpressAPIUrl : '';
+    console.log('WP_URL: ' + WP_URL);
+
+    console.log('json_data:');
+    console.log(json_str);
+
+    const response = await fetch(WP_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: json_str,
+    })
+
+
+    const data = await response.json()
+    console.log('response.json:');
+    console.log(data);
+  }
+
+
   return (
     <div className="flex flex-col items-center bg-white">
       <div className="flex overflow-hidden relative flex-col self-stretch pt-20 w-full text-center text-white min-h-[747px] max-md:max-w-full">
@@ -217,15 +260,22 @@ export default function Home() {
       <div className="mt-36 w-full bg-hand max-md:bg-none">
         <div className="pd-200 flex flex-col mt-36 w-full  max-md:mt-10 max-md:w-full max-md:pr-0">
 
-          <form className="flex  flex-col self-end px-12 pt-12 pb-20 max-md:w-full mt-64 max-w-full text-sm text-white bg-slate-800 w-[435px] max-md:px-5 max-md:mt-10">
+          <form onSubmit={onSubmit} className="flex  flex-col self-end px-12 pt-12 pb-20 max-md:w-full mt-64 max-w-full text-sm text-white bg-slate-800 w-[435px] max-md:px-5 max-md:mt-10">
             <div id="contact">Any questions?</div>
             <div className="mt-4 text-3xl font-bold leading-7">Let’s talk today!</div>
 
-            <input type="text" required placeholder="Name" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
-            <input type="email" required placeholder="Email" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
-            <textarea required placeholder="Message" className="px-6 py-5 mt-6 h-28 bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></textarea>
-            <input type="submit" value="Submit" className="shrink-0 mt-6 mb-2.5 h-10 bg-white rounded cl-black" >
-            </input>
+            <input type="text" id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)} required placeholder="Name" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
+            <input type="email" id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} required placeholder="Email" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
+            <textarea id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required placeholder="Message" className="px-6 py-5 mt-6 h-28 bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></textarea>
+            <button type="submit" className="shrink-0 mt-6 mb-2.5 h-10 bg-white rounded cl-black" >
+              Submit</button>
           </form>
 
         </div>

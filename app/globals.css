@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.bg-hand{
+  background-image: url(/assets/image/hand.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bg-none{
+  background-image:none
+}
+
+.pd-200{
+  padding-right: 200px;
+  padding-bottom: 100px;
+}
+
+.hover\:bg-darker:hover{
+  background: rgba(0,0,0,0.2);
+  background-origin: border-box;
+  border-width: 2pt;
+  border-color: transparent;
+}
+
+.bg-plus{
+  background-image: url(/assets/image/plus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.group-hover\/item\:bg-plus-white:hover{
+  background-image: url(/assets/image/plus_white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.mob-train {
+  background-image: url(/assets/image/train.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.mob-plus-white{
+  background-image: url(/assets/image/plus_white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

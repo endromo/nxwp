@@ -69,10 +69,10 @@ body {
 
 
 .mob-train {
-  background-image: url(/assets/image/train.png);
+  background-image: url(/assets/image/train_small.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
 }
 
 .mob-plus-white{

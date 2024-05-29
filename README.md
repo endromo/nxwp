@@ -25,10 +25,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation Backend
 
+- Step 1: Install Plugin
 - `Add New Plugin`
 - `Upload Plugin`
 - Browse... `endro-wp-plugin-api.zip` , `Install Now`
 - `Activate Plugin`
+- Step 2: Set API URL
+- Open `next.config.mjs`
+- Update value of `wordpressAPIUrl`
 
 ## Running / Development
 

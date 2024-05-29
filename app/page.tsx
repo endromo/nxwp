@@ -18,7 +18,7 @@ export default function Home() {
             <div className="self-center mt-7 text-xl leading-6 max-md:max-w-full">
               Aliquam eu malesuada turpis, eu interdum nibh. Etiam tristique
               erat in ligula consequat malesuada. Praesent posuere vestibulum
-              neque ac posuere.
+              neque ac posuere. {process.env.wordpressAPIUrl}
             </div>
           </div>
         </div>

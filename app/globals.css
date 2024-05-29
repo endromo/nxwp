@@ -80,3 +80,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.cl-black{
+  color: #000;
+  font-weight: bold;
+}

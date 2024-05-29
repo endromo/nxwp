@@ -37,14 +37,18 @@ export default function Home() {
         facilisis nec ipsum nec rutrum.Maecenas dapibus turpis id purus mollis
         aliquam. Sed facilisis nec ipsum nec{" "}
       </div>
-      <div className="justify-center px-5 py-3 mt-12 text-base font-bold leading-6 text-center bg-white rounded-sm border border-pink-900 border-solid text-neutral-900 max-md:mt-10">
-        About us
-      </div>
-      <img alt=""
-        loading="lazy"
-        srcSet="/assets/image/seadrill.png?width=100 100w, /assets/image/seadrill.png?width=200 200w, /assets/image/seadrill.png?width=400 400w, /assets/image/seadrill.png?width=800 800w, /assets/image/seadrill.png?width=1200 1200w, /assets/image/seadrill.png?width=1600 1600w, /assets/image/seadrill.png?width=2000 2000w, /assets/image/seadrill.png"
-        className="mt-14 w-full aspect-[1.92] max-w-[1042px] max-md:mt-10 max-md:max-w-full"
-      />
+      <a href="#contact">
+        <div className="justify-center px-5 py-3 mt-12 text-base font-bold leading-6 text-center bg-white rounded-sm border border-pink-900 border-solid text-neutral-900 max-md:mt-10">
+          About us
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=Y7VZ-krWvlE" target="_blank">
+        <img alt=""
+          loading="lazy"
+          srcSet="/assets/image/seadrill.png?width=100 100w, /assets/image/seadrill.png?width=200 200w, /assets/image/seadrill.png?width=400 400w, /assets/image/seadrill.png?width=800 800w, /assets/image/seadrill.png?width=1200 1200w, /assets/image/seadrill.png?width=1600 1600w, /assets/image/seadrill.png?width=2000 2000w, /assets/image/seadrill.png"
+          className="mt-14 w-full aspect-[1.92] max-w-[1042px] max-md:mt-10 max-md:max-w-full"
+        /></a>
 
 
       <div className="flex overflow-hidden relative flex-col gap-5 self-stretch pr-20 pl-10 mt-40 w-full min-h-[733px] max-md:hidden max-md:flex-wrap max-md:px-5 max-md:mt-10 max-md:max-w-full">
@@ -55,64 +59,72 @@ export default function Home() {
 
             <div className="flex gap-5 pb-0 mb-0 justify-between items-end ml-5 max-w-full w-full max-md:flex-wrap" style={{ height: 633 }}>
 
-              <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{ cursor: "pointer" }}>
-                <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
-                <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Financial statements</div>
+              <a href="#contact">
+                <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10">
+                  <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
+                  <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Financial statements</div>
 
-                <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, cursor: "pointer" }}>
-                  <span>
-                    Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
-                    porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
-                    purus libero, Morbi purus libero, elementum nec</span>
+                  <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300 }}>
+                    <span>
+                      Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
+                      porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
+                      purus libero, Morbi purus libero, elementum nec</span>
+                  </div>
+
                 </div>
-
-              </div>
+              </a>
 
               <div className="shrink-0 self-start w-px  h-[126px]"></div>
 
-              <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{ cursor: "pointer" }}>
-                <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
-                <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Press releases</div>
+              <a href="#contact">
+                <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{}}>
+                  <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
+                  <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Press releases</div>
 
-                <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, cursor: "pointer" }}>
-                  <span>
-                    Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
-                    porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
-                    purus libero, Morbi purus libero, elementum nec</span>
+                  <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, }}>
+                    <span>
+                      Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
+                      porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
+                      purus libero, Morbi purus libero, elementum nec</span>
+                  </div>
+
                 </div>
-
-              </div>
+              </a>
 
               <div className="shrink-0 self-start w-px  h-[126px]"></div>
 
-              <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{ cursor: "pointer" }}>
-                <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
-                <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Webcast links</div>
+              <a href="#contact">
+                <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{}}>
+                  <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
+                  <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Webcast links</div>
 
-                <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, cursor: "pointer" }}>
-                  <span>
-                    Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
-                    porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
-                    purus libero, Morbi purus libero, elementum nec</span>
+                  <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, }}>
+                    <span>
+                      Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
+                      porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
+                      purus libero, Morbi purus libero, elementum nec</span>
+                  </div>
+
                 </div>
-
-              </div>
+              </a>
 
               <div className="shrink-0 self-start w-px  h-[126px]"></div>
 
-              <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{ cursor: "pointer" }}>
-                <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
-                <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Corporate governance</div>
+              <a href="#contact">
+                <div className="flex group/item hover:bg-darker pb-0 mb-0 flex-col mt-20 max-md:mt-10" style={{}}>
+                  <div className="mb-10 flex gap-0 items-start px-6 py-5 w-33  max-md:pr-5 bg-plus group-hover/item:bg-plus-white"></div>
+                  <div className="px-2 text-2xl font-bold leading-7 text-white max-md:mt-10">Corporate governance</div>
 
-                <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, cursor: "pointer" }}>
-                  <span>
-                    Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
-                    porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
-                    purus libero, Morbi purus libero, elementum nec</span>
+                  <div className="px-2 pb-10 invisible group-hover/item:visible" style={{ width: 300, }}>
+                    <span>
+                      Morbi purus libero, elementum nec gravida ac, commodo at erat. Etiam
+                      porta ipsum sed diam aliquam, rutrum tincidunt metus mattis.Morbi
+                      purus libero, Morbi purus libero, elementum nec</span>
+
+                  </div>
 
                 </div>
-
-              </div>
+              </a>
 
             </div>
           </div>
@@ -183,7 +195,9 @@ export default function Home() {
                 <div className="mt-6 font-medium leading-6 max-md:max-w-full">Phasellus quis dignissim lectus. Maecenas dolor ex, pulvinar in vestibulum eu, condimentum sit amet lacus. Fusce ex augue, facilisis ut ligula vitae,
                   fringilla dictum sem. Donec tempus blandit nulla vel auctor. Donec non vestibulum tellus,
                   sit amet condimentum felis. Maecenas scelerisque elit a lectus consequat tincidunt. </div>
-                <div className="justify-center self-start px-9 py-6 mt-9 text-center text-white bg-pink-900 max-md:px-5">Read about operations</div>
+                <a href="#contact">
+                  <div className="justify-center self-start px-9 py-6 mt-9 text-center text-white bg-pink-900 max-md:px-5">Read about operations</div>
+                </a>
               </div>
             </div>
           </div>
@@ -198,18 +212,21 @@ export default function Home() {
 
 
       </div>
+
+
       <div className="mt-36 w-full bg-hand max-md:bg-none">
         <div className="pd-200 flex flex-col mt-36 w-full  max-md:mt-10 max-md:w-full max-md:pr-0">
 
-          <div className="flex  flex-col self-end px-12 pt-12 pb-20 max-md:w-full mt-64 max-w-full text-sm text-white bg-slate-800 w-[435px] max-md:px-5 max-md:mt-10">
-            <div>Any questions?</div>
+          <form className="flex  flex-col self-end px-12 pt-12 pb-20 max-md:w-full mt-64 max-w-full text-sm text-white bg-slate-800 w-[435px] max-md:px-5 max-md:mt-10">
+            <div id="contact">Any questions?</div>
             <div className="mt-4 text-3xl font-bold leading-7">Let’s talk today!</div>
-            <div className="justify-center items-start px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5">Name</div>
-            <div className="shrink-0 mt-6 h-12 bg-black rounded border border-black border-solid"></div>
-            <div className="shrink-0 mt-6 h-28 bg-black rounded border border-black border-solid"></div>
-            <div className="shrink-0 mt-6 mb-2.5 h-10 bg-white rounded">
-            </div>
-          </div>
+
+            <input type="text" placeholder="Name" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
+            <input type="text" placeholder="Email" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
+            <textarea placeholder="Message" className="px-6 py-5 mt-6 h-28 bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></textarea>
+            <input type="submit" value="Submit" className="shrink-0 mt-6 mb-2.5 h-10 bg-white rounded cl-black" >
+            </input>
+          </form>
 
         </div>
       </div>

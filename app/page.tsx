@@ -221,9 +221,9 @@ export default function Home() {
             <div id="contact">Any questions?</div>
             <div className="mt-4 text-3xl font-bold leading-7">Let’s talk today!</div>
 
-            <input type="text" placeholder="Name" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
-            <input type="text" placeholder="Email" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
-            <textarea placeholder="Message" className="px-6 py-5 mt-6 h-28 bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></textarea>
+            <input type="text" required placeholder="Name" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
+            <input type="email" required placeholder="Email" className="px-6 py-5 mt-6 whitespace-nowrap bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></input>
+            <textarea required placeholder="Message" className="px-6 py-5 mt-6 h-28 bg-black rounded border border-black border-solid text-slate-100 max-md:px-5"></textarea>
             <input type="submit" value="Submit" className="shrink-0 mt-6 mb-2.5 h-10 bg-white rounded cl-black" >
             </input>
           </form>
